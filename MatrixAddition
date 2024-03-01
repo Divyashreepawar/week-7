@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class additionofmatrix {
+       public static oid main(String[] args) {
+              int matrix1[][]=new int[3][3];
+              int matrix2[][]=new int[3][3];
+
+              Scanner sc=new Scanner(System.in);
+              System.in.println("Enter matrix size");
+              int size=sc.nextInt();
+
+              System.out.println("Enter matrix1 elements one by one");
+              for(inti=0;i<size;i++) {
+                     for(intj=0;j<size;j++) {
+                             matrix1[i][j]=sc.nextInt();
+                     }
+              }
+              System.out.println("Enter matrix2 elements one by one");
+              for(inti=0;i<size;i++) {
+                   for(intj=0;j<size;j++) {
+                        matrix2[i][j]=sc.nextInt();
+                   }
+              }  
+              intresult[][]=new int[3][3];
+              for(inti=0;i<size;i++) {
+                   for(intj=0;i<size;j++) {
+                          result[i][j]=matrix1[i][j]+matrix2[i][j];
+                   } 
+              }
+              System.out.println("Result matrix");
+              for(inti=0;i<size;i++) {
+                   for(intj=0;i<size;j++) {
+                          System.out.print(result[i][j]+" ");
+                   }
+              }  
+                         
+         
