@@ -1,0 +1,39 @@
+public class vowelcount
+{
+/* This function to count number of vowels, consonant, digits and special characters
+     static void countCharacterType(String str)
+     {
+            //Declare the variables for number of counts vowels, consonant, digit and special characters
+            byte vowelCount = 0, consonantCount = 0, digitCount = 0,splChars = 0;
+            for (short i = 0; i<str.length(); i++)
+            {
+                 char ch = str.charAt (i) ;
+                 if ((ch >= 'a' && ch<= 'z') || (ch >= 'A' && ch<= 'Z'))
+                 { 
+                     ch = character.toLowerCase(ch) ;
+                     if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+                         vowelsCount++;
+                     else 
+                         consonantCount++;
+                 }
+                 else if (ch >= '0' && ch <= '9')
+                     digitCount++;
+                 else
+                     splChars++ /* This counts including white space */;
+              }
+              System.out.println("The total number of Vowels in the given string:"+vowelsCount);
+              System.out.println("The total number of consonants in the given string:"+consonantCount);
+              System.out.println("The total number of Digits in the given string:"+digitCount);
+              System.out.println("The total number of Special Character in the given string:"+splChars);
+      }
+      static public void main (String[] args)
+      {
+           String str=("Habit-2: Begin with an end in your mind.\n stephen R. Covey author of 7 habits Effective people,
+           suggests that effective individuals have a clear vision of   their desired destination before embarking on any endeavor.");
+           countCharacterType(str);
+      }
+}      
+      
+      
+              
+              
